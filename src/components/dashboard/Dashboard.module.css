@@ -1,0 +1,46 @@
+.container
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: #d5eaff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.searchbar
+{
+    margin-top: 30px;
+    display: flex;
+    column-gap: 20px;
+}
+
+input
+{
+    height: 35px;
+    width: 250px;
+    background-color: white;
+    font-size: 14px;
+    border: 0;
+    border-radius: 8px;
+    padding-left: 10px;
+}
+
+button
+{
+    background-color: #6EAC5C;
+    height: 40x;
+    width: 80px;
+    text-align: center;
+    border: 0;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.cards
+{
+    display: flex;
+    column-gap: 20px;
+    margin-top: 30px;
+}
