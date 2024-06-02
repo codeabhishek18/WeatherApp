@@ -14,7 +14,7 @@ const Dashboard = () =>
         try
         {
             setisLoading(true);
-            let url = `http://api.weatherapi.com/v1/current.json?key=7646e2e709a24d079be84925242502&q=${city}&aqi=no`
+            let url = `https://api.weatherapi.com/v1/current.json?key=7646e2e709a24d079be84925242502&q=${city}&aqi=no`
             const response = await axios(url);
             setWeatherData(response.data);
             setisLoading(false);
