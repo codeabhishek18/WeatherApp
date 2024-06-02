@@ -22,6 +22,7 @@ const Dashboard = () =>
         catch(error)
         {
             alert('Failed to fetch weather data');
+            setWeatherData(null);
             setisLoading(false);
             console.log(error);
         }
@@ -36,7 +37,7 @@ const Dashboard = () =>
     return(
         <div className="container">
             <div className="searchbar">
-                <input name="city" placeholder="Enter city name" onChange={(e)=>setCity(e.target.value)}/>
+                <input type="text" name="city" placeholder="Enter city name" onChange={(e)=>setCity(e.target.value)}/>
                 <button onClick={handleClick}>Search</button>
             </div>
 
